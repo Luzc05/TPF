@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Conexión a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Carga de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!--Carga de Favicons-->
+
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="ico/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Navegador Safari-->
+    <link rel="apple-touch-icon" href="ico/apple-touch-icon.png">
+    <!--Demás Navegadores-->
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+
+    <!--Carga de Boxicon-->
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="Boxicons/boxicons-2.1.4/css/boxicons.min.css">
+    <!--Mi Estilos CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Título de la página-->
+    <title>Boutique Chic</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <!--Barra de Navegación-->
+        <nav>
+            <button class="nav-boton" onclick="accion()">Menú</button>
+            <a class="nav-enlace desaparece" href="index.html">
+                <span class="logo">Boutique Chic</span>
+                <span class="logo"><i class='bx bx-shopping-bag bx-tada'></i></span>
+                <a class="nav-enlace desaparece" href="index.html">Inicio</a>
+                <a class="nav-enlace desaparece" href="about.html">Nosotros</a>
+                <a class="nav-enlace desaparece" href="productos.html">Productos</a>
+                <a class="nav-enlace desaparece" href="contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal-->
+    <!-- Banner Hero-->
+    <div cLass="main-image">
+        <div class="container">
+            <h1><span>Boutique Chic</span></h1>
+            <span class="cen">Tienda de Ropas Online</span>
+            <a class="boton-hero" href="#">Contactanos</a>
+        </div>
+    </div>
+
+   <!--Formulario 2-->
+   <form action="" method="post">
+    <h2>Contacto</h2>
+    <input type="text" name="Nombre" placeholder="Nombre">
+    <input type="text" name="E-mail" placeholder="e-mail">
+    <input type="text" name="Telefono" placeholder="Telefono">
+    <textarea name="Mesaje" placeholder="Dejanos tu mensaje"></textarea>
+    <input type="button" value="Enviar" id="boton">
+</form>
+
+
+    <!--Sección pie de página-->
+  <footer class="pie-pagina">
+    <div id="piedepagina">
+        <p>Derechos Reservados @2022</p>
+    </div>
+
+    <div class="grupo-1">
+        <div class="box">
+           <figure>
+               <a href="#">
+                   <img src="img/B.jpg" alt="Logo">
+               </a>
+           </figure>
+       </div>
+       <div class= "box">
+           <h2>SOBRE NOSOTROS</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+       </div>
+      <div class="box">
+          <h2>Seguinos</h2>
+          <div class="red-social">
+              <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="#"> <i class='bx bxl-instagram-alt'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-whatsapp'></i></a>
+          </div>
+      </div>
+  </div>
+
+  <div class="grupo-2">
+     <small>&copy; 2021 <b>Boutique Chic</b> Todos los Derechos Reservados.</small>
+
+  </div>       
+  </footer>
+  <!--fin pie de página-->  
+
+
+    
+
+    <!--Script para el collapse del Nav-->
+    <script>
+        function accion() {
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+</body>
+
+</html>
+
